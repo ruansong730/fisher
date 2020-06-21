@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <p>{{ super() }}</p>
+    <p>{{ data | length }}</p>
+    {% set messages = get_flashed_messages()  %}
+    <p>{{ messages }}</p>
+    {{ data.school | default('数据没有school字段') }}
+    {% for key,value in data.items() %}
+        <p><span>{{ key }}:</span>{{ value }}</p>
+    {% endfor %}
+
+{% endblock %}

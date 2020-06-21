@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>布局页面</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='test.css') }}">
+</head>
+<body>
+{% block head %}
+    This is in head
+{% endblock %}
+{% block content %}
+{% endblock %}
+{% block foot %}
+    This is in foot
+{% endblock %}
+</body>
+</html>
