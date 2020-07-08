@@ -10,5 +10,5 @@ app = create_app()
 
 # app.add_url_rule('/hello', view_func=hello)
 
-
-app.run(host='0.0.0.0', port=81, debug=app.config['DEBUG'], threaded=True)
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=81, debug=app.config['DEBUG'], threaded=True)

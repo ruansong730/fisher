@@ -1,0 +1,258 @@
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon Jul  6 22:41:41 2020] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 11.0.0 (clang-1100.0.33.8) on 05 July 2020 15:03:37
+os: Darwin-19.5.0 Darwin Kernel Version 19.5.0: Tue May 26 20:41:44 PDT 2020; root:xnu-6153.121.2~2/RELEASE_X86_64
+nodename: ruansong
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 12
+current working directory: /Users/ruansong/myProject/python/fisher
+writing pidfile to /Users/ruansong/myProject/python/fisher/logs/order.pid
+detected binary path: /Users/ruansong/.local/share/virtualenvs/fisher-Y2ecBJHt/bin/uwsgi
+chdir() to /Users/ruansong/myProject/python/fisher
+your processes number limit is 2784
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:89 fd 3
+uwsgi socket 0 bound to UNIX address /Users/ruansong/myProject/python/fisher/logs/order.sock fd 6
+Python version: 3.8.3rc1 (v3.8.3rc1:802eb676ba, Apr 29 2020, 18:07:04)  [Clang 6.0 (clang-600.0.57)]
+PEP 405 virtualenv detected: /Users/ruansong/myProject/python/fisher/venv
+Set PythonHome to /Users/ruansong/myProject/python/fisher/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x7fa51ce06790
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 671675 bytes (655 KB) for 4 cores
+*** Operational MODE: preforking ***
+Traceback (most recent call last):
+  File "./fisher.py", line 6, in <module>
+    from app import create_app
+  File "./app/__init__.py", line 4, in <module>
+    from flask import Flask
+ModuleNotFoundError: No module named 'flask'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 30142)
+spawned uWSGI worker 1 (pid: 30143, cores: 1)
+spawned uWSGI worker 2 (pid: 30144, cores: 1)
+spawned uWSGI worker 3 (pid: 30145, cores: 1)
+spawned uWSGI worker 4 (pid: 30146, cores: 1)
+spawned uWSGI http 1 (pid: 30147)
+--- no python application found, check your startup logs for errors ---
+[pid: 30143|app: -1|req: -1/1] 127.0.0.1 () {46 vars in 1114 bytes} [Mon Jul  6 22:42:00 2020] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 30146|app: -1|req: -1/2] 127.0.0.1 () {44 vars in 1031 bytes} [Mon Jul  6 22:42:00 2020] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 30146|app: -1|req: -1/3] 127.0.0.1 () {50 vars in 1169 bytes} [Mon Jul  6 22:42:15 2020] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 30146|app: -1|req: -1/4] 127.0.0.1 () {48 vars in 1085 bytes} [Mon Jul  6 22:42:15 2020] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 30146|app: -1|req: -1/5] 127.0.0.1 () {50 vars in 1169 bytes} [Mon Jul  6 22:43:16 2020] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 30146|app: -1|req: -1/6] 127.0.0.1 () {48 vars in 1085 bytes} [Mon Jul  6 22:43:16 2020] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 30145|app: -1|req: -1/7] 127.0.0.1 () {50 vars in 1169 bytes} [Mon Jul  6 22:45:42 2020] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 30145|app: -1|req: -1/8] 127.0.0.1 () {48 vars in 1085 bytes} [Mon Jul  6 22:45:42 2020] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 30145|app: -1|req: -1/9] 127.0.0.1 () {50 vars in 1169 bytes} [Mon Jul  6 22:45:42 2020] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 30146|app: -1|req: -1/10] 127.0.0.1 () {48 vars in 1085 bytes} [Mon Jul  6 22:45:42 2020] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 30146|app: -1|req: -1/11] 127.0.0.1 () {50 vars in 1169 bytes} [Mon Jul  6 22:45:42 2020] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 30146|app: -1|req: -1/12] 127.0.0.1 () {48 vars in 1085 bytes} [Mon Jul  6 22:45:42 2020] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 30146|app: -1|req: -1/13] 127.0.0.1 () {50 vars in 1169 bytes} [Mon Jul  6 22:45:42 2020] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 30146|app: -1|req: -1/14] 127.0.0.1 () {48 vars in 1085 bytes} [Mon Jul  6 22:45:42 2020] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 30147)
+worker 4 buried after 0 seconds
+worker 3 buried after 0 seconds
+worker 2 buried after 0 seconds
+worker 1 buried after 0 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon Jul  6 22:49:40 2020] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 11.0.0 (clang-1100.0.33.8) on 05 July 2020 15:03:37
+os: Darwin-19.5.0 Darwin Kernel Version 19.5.0: Tue May 26 20:41:44 PDT 2020; root:xnu-6153.121.2~2/RELEASE_X86_64
+nodename: ruansong
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 12
+current working directory: /Users/ruansong/myProject/python/fisher
+writing pidfile to /Users/ruansong/myProject/python/fisher/logs/order.pid
+detected binary path: /Users/ruansong/.local/share/virtualenvs/fisher-Y2ecBJHt/bin/uwsgi
+chdir() to /Users/ruansong/myProject/python/fisher
+your processes number limit is 2784
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:89 fd 3
+uwsgi socket 0 bound to UNIX address /Users/ruansong/myProject/python/fisher/logs/order.sock fd 6
+Python version: 3.8.3rc1 (v3.8.3rc1:802eb676ba, Apr 29 2020, 18:07:04)  [Clang 6.0 (clang-600.0.57)]
+PEP 405 virtualenv detected: /Users/ruansong/.local/share/virtualenvs/fisher-Y2ecBJHt
+Set PythonHome to /Users/ruansong/.local/share/virtualenvs/fisher-Y2ecBJHt
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x7fae61f06150
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 671675 bytes (655 KB) for 4 cores
+*** Operational MODE: preforking ***
+/Users/ruansong/.local/share/virtualenvs/fisher-Y2ecBJHt/lib/python3.8/site-packages/flask_sqlalchemy/__init__.py:833: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7fae61f06150 pid: 30421 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 30421)
+spawned uWSGI worker 1 (pid: 30423, cores: 1)
+spawned uWSGI worker 2 (pid: 30424, cores: 1)
+spawned uWSGI worker 3 (pid: 30425, cores: 1)
+spawned uWSGI worker 4 (pid: 30426, cores: 1)
+spawned uWSGI http 1 (pid: 30427)
+[pid: 30425|app: 0|req: 1/1] 127.0.0.1 () {50 vars in 1167 bytes} [Mon Jul  6 22:49:44 2020] GET / => generated 19277 bytes in 1277 msecs (HTTP/1.1 200) 4 headers in 348 bytes (3 switches on core 0)
+[pid: 30425|app: 0|req: 2/2] 127.0.0.1 () {48 vars in 1104 bytes} [Mon Jul  6 22:49:45 2020] GET /static/3rd/ui/bootstrap.min.css => generated 114012 bytes in 8 msecs via sendfile() (HTTP/1.1 200) 7 headers in 283 bytes (18 switches on core 0)
+[pid: 30426|app: 0|req: 1/4] 127.0.0.1 () {48 vars in 1079 bytes} [Mon Jul  6 22:49:45 2020] GET /static/css/base.css => generated 4479 bytes in 13 msecs via sendfile() (HTTP/1.1 200) 7 headers in 278 bytes (0 switches on core 0)
+[pid: 30423|app: 0|req: 1/4] 127.0.0.1 () {48 vars in 1082 bytes} [Mon Jul  6 22:49:45 2020] GET /static/css/index.css => generated 887 bytes in 13 msecs via sendfile() (HTTP/1.1 200) 7 headers in 276 bytes (1 switches on core 0)
+[pid: 30426|app: 0|req: 2/5] 127.0.0.1 () {48 vars in 1088 bytes} [Mon Jul  6 22:49:45 2020] GET /static/3rd/jquery-3.2.1.min.js => generated 86659 bytes in 4 msecs via sendfile() (HTTP/1.1 200) 7 headers in 294 bytes (12 switches on core 0)
+[pid: 30426|app: 0|req: 3/6] 127.0.0.1 () {48 vars in 1062 bytes} [Mon Jul  6 22:49:45 2020] GET /static/js/base.js => generated 439 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 291 bytes (1 switches on core 0)
+[pid: 30425|app: 0|req: 3/8] 127.0.0.1 () {48 vars in 1082 bytes} [Mon Jul  6 22:49:45 2020] GET /static/3rd/bootstrap.min.js => generated 35558 bytes in 4 msecs via sendfile() (HTTP/1.1 200) 7 headers in 295 bytes (5 switches on core 0)
+[pid: 30426|app: 0|req: 4/9] 127.0.0.1 () {48 vars in 1119 bytes} [Mon Jul  6 22:49:45 2020] GET /static/images/logo-yushu.png => generated 3991 bytes in 3 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (0 switches on core 0)
+[pid: 30423|app: 0|req: 2/9] 127.0.0.1 () {48 vars in 1111 bytes} [Mon Jul  6 22:49:45 2020] GET /static/images/upload.png => generated 1945 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (0 switches on core 0)
+[pid: 30423|app: 0|req: 3/11] 127.0.0.1 () {48 vars in 1107 bytes} [Mon Jul  6 22:49:45 2020] GET /static/images/wish.png => generated 2220 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (0 switches on core 0)
+[pid: 30426|app: 0|req: 5/11] 127.0.0.1 () {48 vars in 1107 bytes} [Mon Jul  6 22:49:45 2020] GET /static/images/gift.png => generated 2516 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 30426|app: 0|req: 6/12] 127.0.0.1 () {48 vars in 1107 bytes} [Mon Jul  6 22:49:46 2020] GET /static/images/icon.png => generated 1749 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 30426|app: 0|req: 7/13] 127.0.0.1 () {50 vars in 1168 bytes} [Mon Jul  6 22:49:54 2020] GET / => generated 19277 bytes in 1258 msecs (HTTP/1.1 200) 4 headers in 348 bytes (5 switches on core 0)
+[pid: 30425|app: 0|req: 4/16] 127.0.0.1 () {48 vars in 1103 bytes} [Mon Jul  6 22:49:56 2020] GET /static/3rd/ui/bootstrap.min.css => generated 114012 bytes in 3 msecs via sendfile() (HTTP/1.1 200) 7 headers in 283 bytes (19 switches on core 0)
+[pid: 30426|app: 0|req: 8/16] 127.0.0.1 () {48 vars in 1080 bytes} [Mon Jul  6 22:49:56 2020] GET /static/css/base.css => generated 4479 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 278 bytes (1 switches on core 0)
+[pid: 30423|app: 0|req: 4/16] 127.0.0.1 () {48 vars in 1082 bytes} [Mon Jul  6 22:49:56 2020] GET /static/css/index.css => generated 887 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 276 bytes (1 switches on core 0)
+[pid: 30426|app: 0|req: 9/17] 127.0.0.1 () {48 vars in 1088 bytes} [Mon Jul  6 22:49:56 2020] GET /static/3rd/jquery-3.2.1.min.js => generated 86659 bytes in 4 msecs via sendfile() (HTTP/1.1 200) 7 headers in 294 bytes (12 switches on core 0)
+[pid: 30423|app: 0|req: 5/19] 127.0.0.1 () {48 vars in 1119 bytes} [Mon Jul  6 22:49:56 2020] GET /static/images/logo-yushu.png => generated 3991 bytes in 3 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 30425|app: 0|req: 5/19] 127.0.0.1 () {48 vars in 1062 bytes} [Mon Jul  6 22:49:56 2020] GET /static/js/base.js => generated 439 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 291 bytes (1 switches on core 0)
+[pid: 30426|app: 0|req: 10/21] 127.0.0.1 () {48 vars in 1082 bytes} [Mon Jul  6 22:49:56 2020] GET /static/3rd/bootstrap.min.js => generated 35558 bytes in 5 msecs via sendfile() (HTTP/1.1 200) 7 headers in 295 bytes (5 switches on core 0)
+[pid: 30423|app: 0|req: 6/21] 127.0.0.1 () {48 vars in 1107 bytes} [Mon Jul  6 22:49:56 2020] GET /static/images/gift.png => generated 2516 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (0 switches on core 0)
+[pid: 30426|app: 0|req: 11/23] 127.0.0.1 () {48 vars in 1107 bytes} [Mon Jul  6 22:49:56 2020] GET /static/images/wish.png => generated 2220 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (0 switches on core 0)
+[pid: 30424|app: 0|req: 1/23] 127.0.0.1 () {48 vars in 1111 bytes} [Mon Jul  6 22:49:56 2020] GET /static/images/upload.png => generated 1945 bytes in 14 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 30426|app: 0|req: 12/24] 127.0.0.1 () {48 vars in 1107 bytes} [Mon Jul  6 22:49:56 2020] GET /static/images/icon.png => generated 1749 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (0 switches on core 0)
+[2020-07-06 22:51:01,190] ERROR in app: Exception on /book/9787208035164/detail [GET]
+Traceback (most recent call last):
+  File "/Users/ruansong/.local/share/virtualenvs/fisher-Y2ecBJHt/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/ruansong/.local/share/virtualenvs/fisher-Y2ecBJHt/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/ruansong/.local/share/virtualenvs/fisher-Y2ecBJHt/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/ruansong/.local/share/virtualenvs/fisher-Y2ecBJHt/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/ruansong/.local/share/virtualenvs/fisher-Y2ecBJHt/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/ruansong/.local/share/virtualenvs/fisher-Y2ecBJHt/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app/web/book.py", line 90, in book_detail
+    return render_template('book_detail.html', book=book, wishes=trade_wishes_model,
+  File "/Users/ruansong/.local/share/virtualenvs/fisher-Y2ecBJHt/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Users/ruansong/.local/share/virtualenvs/fisher-Y2ecBJHt/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Users/ruansong/.local/share/virtualenvs/fisher-Y2ecBJHt/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/ruansong/.local/share/virtualenvs/fisher-Y2ecBJHt/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/ruansong/.local/share/virtualenvs/fisher-Y2ecBJHt/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/ruansong/myProject/python/fisher/app/templates/book_detail.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/ruansong/myProject/python/fisher/app/templates/base.html", line 97, in top-level template code
+    {% block content %} {% endblock %}
+  File "/Users/ruansong/myProject/python/fisher/app/templates/book_detail.html", line 103, in block "content"
+    href="{{ url_for('web.send_drift', gid=gift.id) }}">向他请求此书</a>
+  File "/Users/ruansong/.local/share/virtualenvs/fisher-Y2ecBJHt/lib/python3.8/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/ruansong/.local/share/virtualenvs/fisher-Y2ecBJHt/lib/python3.8/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Users/ruansong/.local/share/virtualenvs/fisher-Y2ecBJHt/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/ruansong/.local/share/virtualenvs/fisher-Y2ecBJHt/lib/python3.8/site-packages/flask/helpers.py", line 357, in url_for
+    rv = url_adapter.build(
+  File "/Users/ruansong/.local/share/virtualenvs/fisher-Y2ecBJHt/lib/python3.8/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'web.send_drift' with values ['gid']. Did you mean 'web.save_to_gifts' instead?
+[pid: 30426|app: 0|req: 13/25] 127.0.0.1 () {52 vars in 1262 bytes} [Mon Jul  6 22:51:01 2020] GET /book/9787208035164/detail => generated 290 bytes in 191 msecs (HTTP/1.1 500) 4 headers in 365 bytes (2 switches on core 0)
+[pid: 30426|app: 0|req: 14/26] 127.0.0.1 () {48 vars in 1110 bytes} [Mon Jul  6 22:51:01 2020] GET /favicon.ico => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (2 switches on core 0)
+[pid: 30426|app: 0|req: 15/27] 127.0.0.1 () {50 vars in 1169 bytes} [Mon Jul  6 22:51:04 2020] GET / => generated 19277 bytes in 1141 msecs (HTTP/1.1 200) 4 headers in 348 bytes (3 switches on core 0)
+[pid: 30426|app: 0|req: 16/29] 127.0.0.1 () {48 vars in 1104 bytes} [Mon Jul  6 22:51:05 2020] GET /static/3rd/ui/bootstrap.min.css => generated 114012 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 283 bytes (20 switches on core 0)
+[pid: 30425|app: 0|req: 6/30] 127.0.0.1 () {48 vars in 1080 bytes} [Mon Jul  6 22:51:05 2020] GET /static/css/base.css => generated 4479 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 278 bytes (1 switches on core 0)
+[pid: 30423|app: 0|req: 7/30] 127.0.0.1 () {48 vars in 1082 bytes} [Mon Jul  6 22:51:05 2020] GET /static/css/index.css => generated 887 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 276 bytes (0 switches on core 0)
+[pid: 30426|app: 0|req: 17/32] 127.0.0.1 () {48 vars in 1088 bytes} [Mon Jul  6 22:51:05 2020] GET /static/3rd/jquery-3.2.1.min.js => generated 86659 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 294 bytes (18 switches on core 0)
+[pid: 30423|app: 0|req: 8/32] 127.0.0.1 () {48 vars in 1082 bytes} [Mon Jul  6 22:51:05 2020] GET /static/3rd/bootstrap.min.js => generated 35558 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 295 bytes (7 switches on core 0)
+[pid: 30425|app: 0|req: 7/33] 127.0.0.1 () {48 vars in 1062 bytes} [Mon Jul  6 22:51:05 2020] GET /static/js/base.js => generated 439 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 291 bytes (1 switches on core 0)
+[pid: 30426|app: 0|req: 18/34] 127.0.0.1 () {48 vars in 1119 bytes} [Mon Jul  6 22:51:05 2020] GET /static/images/logo-yushu.png => generated 3991 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 30425|app: 0|req: 8/36] 127.0.0.1 () {48 vars in 1111 bytes} [Mon Jul  6 22:51:05 2020] GET /static/images/upload.png => generated 1945 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 30426|app: 0|req: 19/36] 127.0.0.1 () {48 vars in 1107 bytes} [Mon Jul  6 22:51:05 2020] GET /static/images/gift.png => generated 2516 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (0 switches on core 0)
+[pid: 30426|app: 0|req: 20/37] 127.0.0.1 () {48 vars in 1107 bytes} [Mon Jul  6 22:51:05 2020] GET /static/images/wish.png => generated 2220 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 30426|app: 0|req: 21/38] 127.0.0.1 () {52 vars in 1275 bytes} [Mon Jul  6 22:51:09 2020] GET /book/search?q=%E9%9F%A9%E5%AF%92 => generated 23789 bytes in 337 msecs (HTTP/1.1 200) 4 headers in 348 bytes (6 switches on core 0)
+[pid: 30426|app: 0|req: 22/40] 127.0.0.1 () {48 vars in 1112 bytes} [Mon Jul  6 22:51:10 2020] GET /static/css/base.css => generated 4479 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 278 bytes (1 switches on core 0)
+[pid: 30425|app: 0|req: 9/40] 127.0.0.1 () {48 vars in 1136 bytes} [Mon Jul  6 22:51:10 2020] GET /static/3rd/ui/bootstrap.min.css => generated 114012 bytes in 3 msecs via sendfile() (HTTP/1.1 200) 7 headers in 283 bytes (20 switches on core 0)
+[pid: 30423|app: 0|req: 9/41] 127.0.0.1 () {48 vars in 1130 bytes} [Mon Jul  6 22:51:10 2020] GET /static/css/search-result.css => generated 475 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 277 bytes (0 switches on core 0)
+[pid: 30425|app: 0|req: 10/42] 127.0.0.1 () {48 vars in 1120 bytes} [Mon Jul  6 22:51:10 2020] GET /static/3rd/jquery-3.2.1.min.js => generated 86659 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 294 bytes (15 switches on core 0)
+[pid: 30425|app: 0|req: 11/43] 127.0.0.1 () {48 vars in 1114 bytes} [Mon Jul  6 22:51:10 2020] GET /static/3rd/bootstrap.min.js => generated 35558 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 295 bytes (6 switches on core 0)
+[pid: 30426|app: 0|req: 23/44] 127.0.0.1 () {48 vars in 1094 bytes} [Mon Jul  6 22:51:10 2020] GET /static/js/base.js => generated 439 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 291 bytes (1 switches on core 0)
+[pid: 30423|app: 0|req: 10/45] 127.0.0.1 () {48 vars in 1094 bytes} [Mon Jul  6 22:51:10 2020] GET /static/js/util.js => generated 490 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 291 bytes (1 switches on core 0)
+[pid: 30426|app: 0|req: 24/47] 127.0.0.1 () {48 vars in 1138 bytes} [Mon Jul  6 22:51:10 2020] GET /static/3rd/jquery.twbsPagination.min.js => generated 6215 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 293 bytes (0 switches on core 0)
+[pid: 30425|app: 0|req: 12/47] 127.0.0.1 () {48 vars in 1112 bytes} [Mon Jul  6 22:51:10 2020] GET /static/js/search_result.js => generated 1106 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 293 bytes (1 switches on core 0)
+[pid: 30425|app: 0|req: 13/49] 127.0.0.1 () {48 vars in 1151 bytes} [Mon Jul  6 22:51:10 2020] GET /static/images/logo-yushu.png => generated 3991 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (0 switches on core 0)
+[pid: 30426|app: 0|req: 25/50] 127.0.0.1 () {48 vars in 1143 bytes} [Mon Jul  6 22:51:10 2020] GET /static/images/upload.png => generated 1945 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 30423|app: 0|req: 11/50] 127.0.0.1 () {48 vars in 1139 bytes} [Mon Jul  6 22:51:10 2020] GET /static/images/gift.png => generated 2516 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (0 switches on core 0)
+[pid: 30424|app: 0|req: 2/51] 127.0.0.1 () {48 vars in 1139 bytes} [Mon Jul  6 22:51:10 2020] GET /static/images/wish.png => generated 2220 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 30426|app: 0|req: 26/52] 127.0.0.1 () {52 vars in 1275 bytes} [Mon Jul  6 22:51:35 2020] GET /book/search?q=%E9%9F%A9%E5%AF%92 => generated 23789 bytes in 1795 msecs (HTTP/1.1 200) 4 headers in 348 bytes (6 switches on core 0)
+[pid: 30425|app: 0|req: 14/53] 127.0.0.1 () {48 vars in 1136 bytes} [Mon Jul  6 22:51:37 2020] GET /static/3rd/ui/bootstrap.min.css => generated 114012 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 283 bytes (22 switches on core 0)
+[pid: 30423|app: 0|req: 12/55] 127.0.0.1 () {48 vars in 1130 bytes} [Mon Jul  6 22:51:37 2020] GET /static/css/search-result.css => generated 475 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 277 bytes (1 switches on core 0)
+[pid: 30426|app: 0|req: 27/55] 127.0.0.1 () {48 vars in 1112 bytes} [Mon Jul  6 22:51:37 2020] GET /static/css/base.css => generated 4479 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 278 bytes (1 switches on core 0)
+[pid: 30426|app: 0|req: 28/56] 127.0.0.1 () {48 vars in 1120 bytes} [Mon Jul  6 22:51:37 2020] GET /static/3rd/jquery-3.2.1.min.js => generated 86659 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 294 bytes (19 switches on core 0)
+[pid: 30425|app: 0|req: 15/57] 127.0.0.1 () {48 vars in 1114 bytes} [Mon Jul  6 22:51:37 2020] GET /static/3rd/bootstrap.min.js => generated 35558 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 295 bytes (7 switches on core 0)
+[pid: 30423|app: 0|req: 13/58] 127.0.0.1 () {48 vars in 1094 bytes} [Mon Jul  6 22:51:37 2020] GET /static/js/base.js => generated 439 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 291 bytes (0 switches on core 0)
+[pid: 30426|app: 0|req: 29/59] 127.0.0.1 () {48 vars in 1138 bytes} [Mon Jul  6 22:51:37 2020] GET /static/3rd/jquery.twbsPagination.min.js => generated 6215 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 293 bytes (0 switches on core 0)
+[pid: 30425|app: 0|req: 16/60] 127.0.0.1 () {48 vars in 1094 bytes} [Mon Jul  6 22:51:37 2020] GET /static/js/util.js => generated 490 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 291 bytes (0 switches on core 0)
+[pid: 30426|app: 0|req: 30/61] 127.0.0.1 () {48 vars in 1112 bytes} [Mon Jul  6 22:51:37 2020] GET /static/js/search_result.js => generated 1106 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 293 bytes (0 switches on core 0)
+[pid: 30426|app: 0|req: 31/62] 127.0.0.1 () {48 vars in 1151 bytes} [Mon Jul  6 22:51:37 2020] GET /static/images/logo-yushu.png => generated 3991 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 30423|app: 0|req: 14/65] 127.0.0.1 () {48 vars in 1139 bytes} [Mon Jul  6 22:51:37 2020] GET /static/images/gift.png => generated 2516 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 30425|app: 0|req: 17/65] 127.0.0.1 () {48 vars in 1143 bytes} [Mon Jul  6 22:51:37 2020] GET /static/images/upload.png => generated 1945 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 30424|app: 0|req: 3/65] 127.0.0.1 () {48 vars in 1139 bytes} [Mon Jul  6 22:51:37 2020] GET /static/images/wish.png => generated 2220 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (0 switches on core 0)
+[pid: 30426|app: 0|req: 32/66] 127.0.0.1 () {48 vars in 1139 bytes} [Mon Jul  6 22:51:37 2020] GET /static/images/icon.png => generated 1749 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 30426|app: 0|req: 33/67] 127.0.0.1 () {52 vars in 1274 bytes} [Mon Jul  6 22:51:39 2020] GET /book/search?q=%E9%9F%A9%E5%AF%92 => generated 23789 bytes in 681 msecs (HTTP/1.1 200) 4 headers in 348 bytes (5 switches on core 0)
+[pid: 30425|app: 0|req: 18/70] 127.0.0.1 () {48 vars in 1112 bytes} [Mon Jul  6 22:51:40 2020] GET /static/css/base.css => generated 4479 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 278 bytes (0 switches on core 0)
+[pid: 30423|app: 0|req: 15/70] 127.0.0.1 () {48 vars in 1130 bytes} [Mon Jul  6 22:51:40 2020] GET /static/css/search-result.css => generated 475 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 277 bytes (0 switches on core 0)
+[pid: 30426|app: 0|req: 34/70] 127.0.0.1 () {48 vars in 1135 bytes} [Mon Jul  6 22:51:40 2020] GET /static/3rd/ui/bootstrap.min.css => generated 114012 bytes in 3 msecs via sendfile() (HTTP/1.1 200) 7 headers in 283 bytes (21 switches on core 0)
+[pid: 30426|app: 0|req: 35/72] 127.0.0.1 () {48 vars in 1120 bytes} [Mon Jul  6 22:51:40 2020] GET /static/3rd/jquery-3.2.1.min.js => generated 86659 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 294 bytes (21 switches on core 0)
+[pid: 30425|app: 0|req: 19/72] 127.0.0.1 () {48 vars in 1114 bytes} [Mon Jul  6 22:51:40 2020] GET /static/3rd/bootstrap.min.js => generated 35558 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 295 bytes (8 switches on core 0)
+[pid: 30423|app: 0|req: 16/73] 127.0.0.1 () {48 vars in 1094 bytes} [Mon Jul  6 22:51:40 2020] GET /static/js/base.js => generated 439 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 291 bytes (1 switches on core 0)
+[pid: 30423|app: 0|req: 17/74] 127.0.0.1 () {48 vars in 1138 bytes} [Mon Jul  6 22:51:40 2020] GET /static/3rd/jquery.twbsPagination.min.js => generated 6215 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 293 bytes (1 switches on core 0)
+[pid: 30426|app: 0|req: 36/75] 127.0.0.1 () {48 vars in 1094 bytes} [Mon Jul  6 22:51:40 2020] GET /static/js/util.js => generated 490 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 291 bytes (0 switches on core 0)
+[pid: 30426|app: 0|req: 37/76] 127.0.0.1 () {48 vars in 1112 bytes} [Mon Jul  6 22:51:40 2020] GET /static/js/search_result.js => generated 1106 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 293 bytes (1 switches on core 0)
+[pid: 30426|app: 0|req: 38/77] 127.0.0.1 () {48 vars in 1151 bytes} [Mon Jul  6 22:51:40 2020] GET /static/images/logo-yushu.png => generated 3991 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (0 switches on core 0)
+[pid: 30425|app: 0|req: 20/78] 127.0.0.1 () {48 vars in 1143 bytes} [Mon Jul  6 22:51:40 2020] GET /static/images/upload.png => generated 1945 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 30426|app: 0|req: 39/80] 127.0.0.1 () {48 vars in 1139 bytes} [Mon Jul  6 22:51:40 2020] GET /static/images/gift.png => generated 2516 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 30423|app: 0|req: 18/80] 127.0.0.1 () {48 vars in 1139 bytes} [Mon Jul  6 22:51:40 2020] GET /static/images/wish.png => generated 2220 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 30426|app: 0|req: 40/81] 127.0.0.1 () {48 vars in 1139 bytes} [Mon Jul  6 22:51:40 2020] GET /static/images/icon.png => generated 1749 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (0 switches on core 0)
+[pid: 30426|app: 0|req: 41/82] 127.0.0.1 () {52 vars in 1244 bytes} [Mon Jul  6 22:51:41 2020] GET / => generated 19277 bytes in 1439 msecs (HTTP/1.1 200) 4 headers in 348 bytes (5 switches on core 0)
+[pid: 30425|app: 0|req: 21/85] 127.0.0.1 () {48 vars in 1104 bytes} [Mon Jul  6 22:51:43 2020] GET /static/3rd/ui/bootstrap.min.css => generated 114012 bytes in 3 msecs via sendfile() (HTTP/1.1 200) 7 headers in 283 bytes (17 switches on core 0)
+[pid: 30426|app: 0|req: 42/85] 127.0.0.1 () {48 vars in 1080 bytes} [Mon Jul  6 22:51:43 2020] GET /static/css/base.css => generated 4479 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 278 bytes (1 switches on core 0)
+[pid: 30423|app: 0|req: 19/85] 127.0.0.1 () {48 vars in 1082 bytes} [Mon Jul  6 22:51:43 2020] GET /static/css/index.css => generated 887 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 276 bytes (0 switches on core 0)
+[pid: 30426|app: 0|req: 43/87] 127.0.0.1 () {48 vars in 1088 bytes} [Mon Jul  6 22:51:43 2020] GET /static/3rd/jquery-3.2.1.min.js => generated 86659 bytes in 4 msecs via sendfile() (HTTP/1.1 200) 7 headers in 294 bytes (12 switches on core 0)
+[pid: 30425|app: 0|req: 22/87] 127.0.0.1 () {48 vars in 1082 bytes} [Mon Jul  6 22:51:43 2020] GET /static/3rd/bootstrap.min.js => generated 35558 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 295 bytes (4 switches on core 0)
+[pid: 30423|app: 0|req: 20/88] 127.0.0.1 () {48 vars in 1062 bytes} [Mon Jul  6 22:51:43 2020] GET /static/js/base.js => generated 439 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 291 bytes (0 switches on core 0)
+[pid: 30426|app: 0|req: 44/89] 127.0.0.1 () {48 vars in 1119 bytes} [Mon Jul  6 22:51:43 2020] GET /static/images/logo-yushu.png => generated 3991 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (0 switches on core 0)
+[pid: 30425|app: 0|req: 23/90] 127.0.0.1 () {48 vars in 1111 bytes} [Mon Jul  6 22:51:43 2020] GET /static/images/upload.png => generated 1945 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 30426|app: 0|req: 45/91] 127.0.0.1 () {48 vars in 1107 bytes} [Mon Jul  6 22:51:43 2020] GET /static/images/gift.png => generated 2516 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 30426|app: 0|req: 46/92] 127.0.0.1 () {48 vars in 1107 bytes} [Mon Jul  6 22:51:43 2020] GET /static/images/wish.png => generated 2220 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 30427)
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+goodbye to uWSGI.

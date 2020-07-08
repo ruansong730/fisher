@@ -13,6 +13,7 @@ flask-sqlalchemy = "*"
 cymysql = "*"
 email-validator = "*"
 flask-login = "*"
+uwsgi = "*"
 
 [requires]
 python_version = "3.8"
